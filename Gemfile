@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -35,24 +36,21 @@ gem 'jquery-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
   # Test framework
   gem 'rspec-rails'
-
   # Test factories instead of fixtures
   gem 'factory_girl_rails'
+  # Test data generator
+  gem 'ffaker'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
   # Replace standard Rails console with Pry
   gem 'pry-rails'
-
   # Better colors for activerecord log entries (Remove after Rails 5 update)
   gem 'activerecord-colored_log_subscriber'
 end
@@ -60,21 +58,14 @@ end
 group :test do
   # Acceptance test framework for web applications
   gem 'capybara'
-
   # Capybara driver for headless WebKit to test javascript web applications
   gem 'capybara-webkit'
-
   # Capybara page objects
   gem 'site_prism'
-
   # Use to ensure database clean state for testing
   gem 'database_cleaner'
-
   # One-liner matchers for common Rails functionality
   gem 'shoulda-matchers'
-
-  # Test data generator
-  gem 'ffaker'
 end
 
 # Rails forms made easy
