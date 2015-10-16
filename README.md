@@ -3,8 +3,13 @@ Scaffold Ruby on Rails application
 
 ## Ruby & Rails versions
 
-* Ruby 2.2.0
+* Ruby 2.2.3
 * Rails 4.2.4
+
+## Database versions
+
+* Development & Test: SQLite 3.8.5
+* Production: Postgres 9.4.5
 
 ## Installation
 
@@ -24,10 +29,14 @@ Install qt:
 
 https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
 
+Install postgres:
+
+http://www.postgresql.org/download/
+
 Install ruby:
 
 ```
-rbenv install 2.2.0
+rbenv install 2.2.3
 ```
 
 Clone repository:
