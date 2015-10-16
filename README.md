@@ -33,6 +33,11 @@ Install postgres:
 
 http://www.postgresql.org/download/
 
+```
+psql template1 -c "CREATE ROLE hive_username WITH CREATEDB LOGIN PASSWORD 'hive_password'"
+psql template1 -c '\du'
+```
+
 Install ruby:
 
 ```
